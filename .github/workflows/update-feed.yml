@@ -1,0 +1,53 @@
+name: Update WeChat RSS
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "15 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Download WeChat RSS
+        env:
+          WECHAT_RSS_URL: ${{ secrets.WECHAT_RSS_URL }}
+        run: |
+          curl --fail \
+               --silent \
+               --show-error \
+               --location \
+               --retry 3 \
+               --output feed.xml \
+               "$WECHAT_RSS_URL"
+
+      - name: Validate downloaded RSS
+        run: |
+          test -s feed.xml
+          grep -q "<rss" feed.xml
+          echo "RSS download and validation succeeded."
+          echo "File size:"
+          wc -c feed.xml
+
+      - name: Commit updated feed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add feed.xml
+
+          if git diff --cached --quiet; then
+            echo "No RSS changes detected."
+            exit 0
+          fi
+
+          git commit -m "Update WeChat RSS"
+          git push
