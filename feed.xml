@@ -5,32 +5,9 @@
 <link>https://wechatrss.waytomaster.com</link>
 <description>gardom subscriptions</description>
 <language>zh-CN</language>
-<lastBuildDate>Sun, 20 Sep 2026 11:23:50 +0000</lastBuildDate>
+<lastBuildDate>Mon, 28 Sep 2026 06:50:02 +0000</lastBuildDate>
 <generator>WeChat RSS</generator>
 <atom:link href="https://wechatrss.waytomaster.com/api/rss/all?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjI2IiwidHlwZSI6InJzcyJ9.AW0dAfVboRPMHkwOxHBU8MvuNoqYSVEhfut0ueluoS4" rel="self" type="application/rss+xml"/>
-<item>
-  <title>[重要] 您的 基础版 订阅已过期</title>
-  <link>https://wechatrss.waytomaster.com/pricing</link>
-  <guid isPermaLink="false">system-expire-2226-1789877443-expired</guid>
-  <pubDate>Sun, 20 Sep 2026 11:23:50 +0000</pubDate>
-  <description><![CDATA[
-                <div style="padding:20px;background:#fff2f0;border:1px solid #ffccc7;border-radius:8px;margin-bottom:16px">
-                    <h2 style="color:#cf1322;margin:0 0 12px">订阅已过期</h2>
-                    <p style="color:#333;font-size:15px;line-height:1.8;margin:0 0 12px">
-                        您的 <strong>基础版</strong> 订阅已于 <strong>2026-09-20 04:10</strong> 过期。
-                    </p>
-                    <p style="color:#333;font-size:15px;line-height:1.8;margin:0 0 12px">
-                        宽限期剩余 <strong>2 天</strong>，届时您的订阅数量将受到免费版限制，
-                        超出部分的公众号将被冻结。
-                    </p>
-                    <p style="margin:16px 0 0">
-                        <a href="https://wechatrss.waytomaster.com/pricing" style="display:inline-block;padding:10px 24px;
-                           background:#1890ff;color:#fff;text-decoration:none;border-radius:6px;
-                           font-size:14px">立即续费</a>
-                    </p>
-                </div>
-            ]]></description>
-</item>
 <item>
   <title>[集智俱乐部] 肿瘤免疫双特异性抗体研发探索与实践｜免疫复杂性读书会第17期</title>
   <link>https://mp.weixin.qq.com/s/KyMnY22RSVhEtVBhvNz1dg</link>
